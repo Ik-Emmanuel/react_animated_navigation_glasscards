@@ -1,0 +1,61 @@
+.App {
+  padding: 50px;
+}
+
+.projects__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.projects__item {
+  background: #272f39;
+  padding: 1.2rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.projects__item:hover {
+  border-color: var(--color-primary);
+  background: transparent;
+}
+.projects__item__image {
+  border-radius: 1.5rem;
+  height: 230px;
+  /* give the div width and height and hide whatever remains */
+  overflow: hidden;
+}
+
+.projects__item h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 1.2rem 0 2rem;
+}
+
+.projects__item__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* responsive design */
+@media (max-width: 1000px) {
+  .projects__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

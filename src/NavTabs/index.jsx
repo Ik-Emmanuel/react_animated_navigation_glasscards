@@ -11,7 +11,7 @@ const NavTabs = ({
     useEffect(() => {
         setActive(elements.current[0].getBoundingClientRect());
         onChange(elements.current[0].innerText)
-    }, [elements, onChange])
+    }, [elements])
     // console.log("active", active)
     return (
         <nav className='nav__tabs'>

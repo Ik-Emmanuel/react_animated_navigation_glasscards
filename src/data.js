@@ -54,7 +54,7 @@ export const data = [
     {
         id: 14,
         group: "UI/UX",
-        image: "https://view.subpage.app/app/company/C532b8873cc5442e2b1f2265b77a7d7dc/domain/MTiT0jFlGh/page/Ma9aQb2DGh/article/M7329d3de83302b2bafab52cdee13a2c21695278085279/hero/Me6e82258315deaaf43317f41831cfffd1695623735979.Webp",
+        image: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/1cd15367599363.5b3f295b5bec3.png",
         title: "UI Design Kit",
         github: "https://github.com",
         demo: "https://demolink.com"
@@ -78,7 +78,7 @@ export const data = [
     {
         id: 11,
         group: "UI/UX",
-        image: "https://www.onely.com/wp-content/uploads/blog/2021/responsive-Web-design/0-responsive-Web-design-hero-image.jpg",
+        image: "https://www.webfx.com/wp-content/uploads/2023/08/94_what_is_responsive_web_design-1024x462.png",
         title: "Responsive Website Design",
         github: "https://github.com",
         demo: "https://demolink.com"
