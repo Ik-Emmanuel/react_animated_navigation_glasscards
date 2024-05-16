@@ -45,6 +45,19 @@
   margin-bottom: 1rem;
 }
 
+.projects__item.zoom__in {
+  animation: zoomIn 600ms ease;
+}
+
+@keyframes zoomIn {
+  0% {
+    scale: 0.5;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
 /* responsive design */
 @media (max-width: 1000px) {
   .projects__container {

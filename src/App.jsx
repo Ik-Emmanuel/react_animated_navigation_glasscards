@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import NavTabs from './NavTabs';
 import { data } from './data';
@@ -9,18 +9,24 @@ function App() {
 
   // pass in all list of data by default
   const [projects, setProjects] = useState(data)
+  const [load, setLoad] = useState(false)
+
+  useEffect(() => {
+    setLoad(true);
+    setTimeout(() => {
+      setLoad(false)
+    }, 600)
+  }, [projects])
 
 
   const getTabs = () => {
     const tabs = ["All"]
     data.map((item) => {
       if (!tabs.includes(item.group)) {
-        tabs.push(item.group)
+        tabs.push(item.group);
       }
     })
     return tabs;
-
-
   }
 
   const setProjectTab = (group) => {
@@ -40,7 +46,7 @@ function App() {
       <div className="projects__container">
         {
           projects.map(({ image, title, github, demo }, index) => (
-            <div className={`projects__item`} key={index}>
+            <div className={`projects__item ${load ? 'zoom__in' : ''}`} key={index}>
               <div className="projects__item__image">
                 <img src={image} alt={title} />
               </div>
