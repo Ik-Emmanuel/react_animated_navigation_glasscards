@@ -14,10 +14,18 @@ function App() {
       }
     })
     return tabs;
+
+
   }
+
+  const setProject = (group) => {
+    console.log("group", group)
+  }
+
+
   return (
     <div className="App">
-      <NavTabs tabs={getTabs()} onChange={(value) => { console.log("value", value) }} />
+      <NavTabs tabs={getTabs()} onChange={setProject} />
     </div>
   );
 }
