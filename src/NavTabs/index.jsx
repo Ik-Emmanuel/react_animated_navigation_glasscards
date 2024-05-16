@@ -34,6 +34,7 @@ const NavTabs = ({
                 right: `${active.right}px`,
                 width: `${active.width}px`,
                 height: `${active.height}px`
+                //position the cursor to active or clicked tab
 
             }}>
 
